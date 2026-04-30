@@ -30,8 +30,9 @@ app.use(helmet({
 }));
 app.use(compression());
 app.use(morgan('dev'));
+const corsOrigin = (process.env.CORS_ORIGIN || 'http://localhost:5173').replace(/\/$/, '');
 app.use(cors({
-  origin: process.env.CORS_ORIGIN || 'http://localhost:5173',
+  origin: corsOrigin,
   credentials: true,
 }));
 app.use(express.json({ limit: '10mb' }));
