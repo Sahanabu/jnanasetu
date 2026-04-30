@@ -32,7 +32,20 @@ app.use(compression());
 app.use(morgan('dev'));
 const corsOrigin = (process.env.CORS_ORIGIN || 'http://localhost:5173').replace(/\/$/, '');
 app.use(cors({
-  origin: corsOrigin,
+  origin: function (origin, callback) {
+    // Allow requests with no origin (like mobile apps or curl)
+    if (!origin) return callback(null, true);
+    
+    const cleanOrigin = origin.replace(/\/$/, '');
+    const allowedOrigin = corsOrigin.replace(/\/$/, '');
+    
+    if (cleanOrigin === allowedOrigin || allowedOrigin === '*') {
+      callback(null, true);
+    } else {
+      console.warn(`CORS blocked: Origin "${origin}" does not match "${allowedOrigin}"`);
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   credentials: true,
 }));
 app.use(express.json({ limit: '10mb' }));
