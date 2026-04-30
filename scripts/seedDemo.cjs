@@ -9,12 +9,14 @@
  */
 
 const http = require('http');
+const https = require('https');
 
-const API_BASE = 'http://localhost:3001/api';
+const API_BASE = (process.env.VITE_BACKEND_URL || 'http://localhost:3001').replace(/\/$/, '') + '/api';
 
 function apiPost(endpoint, data) {
   return new Promise((resolve, reject) => {
     const url = new URL(endpoint, API_BASE);
+    const client = url.protocol === 'https:' ? https : http;
     const body = JSON.stringify(data);
     const options = {
       hostname: url.hostname,
@@ -27,7 +29,7 @@ function apiPost(endpoint, data) {
       },
     };
 
-    const req = http.request(options, (res) => {
+    const req = client.request(options, (res) => {
       let responseBody = '';
       res.on('data', (chunk) => (responseBody += chunk));
       res.on('end', () => {
