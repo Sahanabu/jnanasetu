@@ -21,9 +21,13 @@ const messagesRouter = require('./routes/messages');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
-// Support both variants, strip whitespace, and handle accidental "KEY=VALUE" pasting
+
+// Robust URI extraction: Find the part starting with mongodb:// or mongodb+srv://
 const rawUri = (process.env.MONGODB_URI || process.env.MONGO_URI || 'mongodb://localhost:27017/jnanasetu').trim();
-const MONGODB_URI = rawUri.split('=').pop().trim().replace(/\s/g, '');
+const uriMatch = rawUri.match(/(mongodb(?:\+srv)?:\/\/[^\s"']+)/i);
+const MONGODB_URI = uriMatch ? uriMatch[1].replace(/\s/g, '') : rawUri.replace(/\s/g, '');
+
+console.log(`Backend config: PORT=${PORT}, DB_SCHEME=${MONGODB_URI.split(':')[0]}://...`);
 
 // Middleware
 app.use(helmet({
