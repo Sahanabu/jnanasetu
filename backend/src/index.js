@@ -24,8 +24,9 @@ const PORT = process.env.PORT || 3001;
 
 // Robust URI extraction: Find the part starting with mongodb:// or mongodb+srv://
 const rawUri = (process.env.MONGODB_URI || process.env.MONGO_URI || 'mongodb://localhost:27017/jnanasetu').trim();
-const uriMatch = rawUri.match(/(mongodb(?:\+srv)?:\/\/[^\s"']+)/i);
-const MONGODB_URI = uriMatch ? uriMatch[1].replace(/\s/g, '') : rawUri.replace(/\s/g, '');
+const cleanRaw = rawUri.replace(/\s/g, ''); // Remove ALL spaces before matching
+const uriMatch = cleanRaw.match(/(mongodb(?:\+srv)?:\/\/[^"']+)/i);
+const MONGODB_URI = uriMatch ? uriMatch[1] : cleanRaw;
 
 console.log(`Backend config: PORT=${PORT}, DB_SCHEME=${MONGODB_URI.split(':')[0]}://...`);
 
