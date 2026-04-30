@@ -1,24 +1,27 @@
 # Deployment Guide for JnanaSetu
 
-This project is configured for deployment with **Netlify (Frontend)** and **Vercel (Backend)**.
+This project is configured for deployment with **Netlify (Frontend)** and **Render (Backend)**.
 
-## 1. Backend (Vercel)
+## 1. Backend (Render)
 The backend is located in the `/backend` directory.
 
-### Environment Variables for Vercel:
+### Environment Variables for Render:
 - `MONGODB_URI`: Your MongoDB Atlas connection string.
 - `GROQ_API_KEY`: Your Groq AI API key.
 - `CORS_ORIGIN`: Your Netlify frontend URL (e.g., `https://jnanasetu.netlify.app`).
-- `PORT`: 3001 (optional, Vercel handles this).
 - `JWT_SECRET`: A random string for auth tokens.
+- `NODE_ENV`: production
 
 ### Deployment Steps:
 1. Push your code to GitHub.
-2. In Vercel, click "Add New" -> "Project".
+2. In Render, click "New" -> "Web Service".
 3. Select your repository.
 4. Set the **Root Directory** to `backend`.
-5. Add the environment variables listed above.
-6. Deploy!
+5. Set the **Environment** to `Node`.
+6. Set the **Build Command** to `npm install`.
+7. Set the **Start Command** to `npm start`.
+8. Add the environment variables listed above in the "Advanced" section.
+9. Deploy!
 
 ## 2. Frontend (Netlify)
 The frontend is located in the `/frontend` directory.
