@@ -113,53 +113,58 @@ export default function LandingPage() {
               </span>
             </div>
 
-            {/* Theme Toggle */}
-            <button
-              onClick={toggleTheme}
-              className="ml-auto mr-4 p-2 bg-gray-100 dark:bg-slate-800 rounded-xl hover:bg-gray-200 dark:hover:bg-slate-700 transition-all"
-              title={darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
-            >
-              {darkMode ? '☀️' : '🌙'}
-            </button>
+            {/* Auth/Dashboard Section (Left-most of right group) */}
+            <div className="ml-auto mr-4">
+              {isAuthenticated ? (
+                <button
+                  onClick={() => {
+                    const role = user?.role;
+                    if (role === 'admin') navigate('/admin');
+                    else if (role === 'teacher') navigate('/teacher');
+                    else navigate('/learn');
+                  }}
+                  className="px-6 py-2 text-sm font-bold bg-violet-600 text-white rounded-full hover:bg-violet-700 transition-all shadow-lg shadow-violet-200/50"
+                >
+                  Dashboard
+                </button>
+              ) : (
+                <button
+                  onClick={() => navigate('/signup')}
+                  className="hidden sm:block px-6 py-2 text-sm font-bold bg-gradient-to-r from-violet-600 to-indigo-600 text-white rounded-full hover:shadow-lg hover:shadow-violet-200 transition-all"
+                >
+                  Get Started
+                </button>
+              )}
+            </div>
 
             {/* Desktop nav */}
             <div className="hidden md:flex items-center gap-6">
-              <a href="#features" className="text-sm text-gray-600 hover:text-violet-600 transition-colors">Features</a>
-              <a href="#how-it-works" className="text-sm text-gray-600 hover:text-violet-600 transition-colors">How It Works</a>
-              <a href="#testimonials" className="text-sm text-gray-600 hover:text-violet-600 transition-colors">Testimonials</a>
+              <a href="#features" className="text-sm font-medium text-gray-600 hover:text-violet-600 transition-colors">Features</a>
+              <a href="#how-it-works" className="text-sm font-medium text-gray-600 hover:text-violet-600 transition-colors">How It Works</a>
+              
+              {/* Theme Toggle inside Nav */}
+              <button
+                onClick={toggleTheme}
+                className="p-2 bg-gray-100 dark:bg-slate-800 rounded-xl hover:bg-gray-200 dark:hover:bg-slate-700 transition-all"
+                title={darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
+              >
+                {darkMode ? '☀️' : '🌙'}
+              </button>
+
               {isAuthenticated ? (
-                <div className="flex items-center gap-3">
-                  <span className="text-sm text-gray-500">Hi, {user?.name}</span>
-                  <button
-                    onClick={() => {
-                      const role = user?.role;
-                      if (role === 'admin') navigate('/admin');
-                      else if (role === 'teacher') navigate('/teacher');
-                      else navigate('/learn');
-                    }}
-                    className="px-4 py-2 text-sm font-medium bg-violet-600 text-white rounded-full hover:bg-violet-700 transition-all"
-                  >
-                    Dashboard
-                  </button>
-                  <button onClick={logout} className="text-sm text-gray-500 hover:text-red-500 transition-colors">
+                <div className="flex items-center gap-4">
+                  <span className="text-sm font-medium text-gray-500">Hi, {user?.name}</span>
+                  <button onClick={logout} className="text-sm font-bold text-gray-500 hover:text-red-500 transition-colors">
                     Logout
                   </button>
                 </div>
               ) : (
-                <div className="flex items-center gap-3">
-                  <button
-                    onClick={() => navigate('/login')}
-                    className="px-4 py-2 text-sm font-medium text-violet-600 hover:bg-violet-50 rounded-full transition-all"
-                  >
-                    Log In
-                  </button>
-                  <button
-                    onClick={() => navigate('/signup')}
-                    className="px-5 py-2 text-sm font-medium bg-gradient-to-r from-violet-600 to-indigo-600 text-white rounded-full hover:shadow-lg hover:shadow-violet-200 transition-all"
-                  >
-                    Get Started Free
-                  </button>
-                </div>
+                <button
+                  onClick={() => navigate('/login')}
+                  className="px-4 py-2 text-sm font-bold text-violet-600 hover:bg-violet-50 rounded-full transition-all"
+                >
+                  Log In
+                </button>
               )}
             </div>
 
