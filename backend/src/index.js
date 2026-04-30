@@ -21,8 +21,9 @@ const messagesRouter = require('./routes/messages');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
-// Support both variants and strip whitespace
-const MONGODB_URI = (process.env.MONGODB_URI || process.env.MONGO_URI || 'mongodb://localhost:27017/jnanasetu').replace(/\s/g, '');
+// Support both variants, strip whitespace, and handle accidental "KEY=VALUE" pasting
+const rawUri = (process.env.MONGODB_URI || process.env.MONGO_URI || 'mongodb://localhost:27017/jnanasetu').trim();
+const MONGODB_URI = rawUri.split('=').pop().trim().replace(/\s/g, '');
 
 // Middleware
 app.use(helmet({
