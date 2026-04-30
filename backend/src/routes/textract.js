@@ -43,7 +43,8 @@ async function runPythonExtractor(filePath) {
   if (!fs.existsSync(absPdfPath)) throw new Error(`PDF not found: ${absPdfPath}`);
 
   return new Promise((resolve) => {
-    const cmd = `python3 "${scriptPath}" "${absPdfPath}"`;
+    const pythonCmd = process.platform === 'win32' ? 'python' : 'python3';
+    const cmd = `${pythonCmd} "${scriptPath}" "${absPdfPath}"`;
     const env = { ...process.env, GROQ_API_KEY: process.env.GROQ_API_KEY || '' };
     console.log(`[Textract] Running: ${cmd}`);
 
