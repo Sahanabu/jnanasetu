@@ -20,7 +20,7 @@ RUN npm install --production
 COPY . .
 
 # Install python requirements if they exist
-RUN if [ -f src/scripts/requirements.txt ]; then pip3 install -r src/scripts/requirements.txt; fi
+RUN if [ -f src/scripts/requirements.txt ]; then pip3 install --break-system-packages -r src/scripts/requirements.txt; fi
 
 # Expose port
 EXPOSE 3001
