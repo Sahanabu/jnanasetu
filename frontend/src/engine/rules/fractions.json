@@ -1,0 +1,45 @@
+{
+  "topic": "fractions",
+  "rules": [
+    {
+      "id": "frac-001",
+      "description": "Adds numerators AND denominators when adding fractions (1/2+1/3=2/5)",
+      "matchFn": "checkDenominatorAddition",
+      "gapType": "conceptual",
+      "hint": "If you cut a roti into 2 slices and another into 3 slices, are the slices the same size?",
+      "confidence": 0.85
+    },
+    {
+      "id": "frac-002",
+      "description": "Multiplies numerators and denominators correctly but forgets to simplify",
+      "matchFn": "checkUnsimplifiedProduct",
+      "gapType": "procedural",
+      "hint": "Can you divide both the top and bottom numbers by the same number?",
+      "confidence": 0.75
+    },
+    {
+      "id": "frac-003",
+      "description": "Compares fractions by comparing numerators only, ignoring denominators",
+      "matchFn": "checkNumeratorOnlyComparison",
+      "gapType": "conceptual",
+      "hint": "If you have 3 slices from a pizza cut into 4 pieces, and 5 slices from a pizza cut into 8 pieces, who has more pizza?",
+      "confidence": 0.8
+    },
+    {
+      "id": "frac-004",
+      "description": "Finds fraction of a quantity by dividing instead of multiplying",
+      "matchFn": "checkFractionOfQuantity",
+      "gapType": "procedural",
+      "hint": "When finding 2/3 of 12, do you multiply or divide? Try thinking step by step.",
+      "confidence": 0.7
+    },
+    {
+      "id": "frac-005",
+      "description": "Converts mixed numbers to improper fractions incorrectly",
+      "matchFn": "checkMixedNumberConversion",
+      "gapType": "procedural",
+      "hint": "For 2 1/3, remember: multiply the whole number by the denominator, then add the numerator.",
+      "confidence": 0.75
+    }
+  ]
+}

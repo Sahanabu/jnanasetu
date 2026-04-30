@@ -1,0 +1,153 @@
+{
+  "topic": "verbs_and_tenses",
+  "grade": 7,
+  "subject": "english",
+  "questions": [
+    {
+      "id": "eng-verb-001",
+      "question": "Which sentence is in the Present Continuous tense?",
+      "correctAnswer": "I am eating my lunch.",
+      "explanation": "Present Continuous uses 'is/am/are' + verb-ing to show an action happening right now.",
+      "concept": "Present Continuous",
+      "difficulty": "easy",
+      "misconceptions": [
+        {
+          "id": "eng-verb-m-001a",
+          "studentAnswer": "I eat my lunch.",
+          "gapType": "conceptual",
+          "reason": "Student confuses Simple Present (habit) with Present Continuous (now)",
+          "confidence": 0.85,
+          "story": {
+            "template": "flow",
+            "entities": { "item": "action", "people": 1, "container": "time" },
+            "steps": [
+              "Imagine you do something every day. 'I eat lunch at 1 PM.' That's Simple Present.",
+              "Now imagine you are DOING it right now. 'I AM EAT-ING lunch.' That's Present Continuous.",
+              "Look for the '-ing' and the helping verb (am/is/are)!",
+              "Simple = Habit. Continuous = Action in progress."
+            ],
+            "highlight": "habit_vs_action",
+            "moral": "Use '-ing' for things happening right now!"
+          }
+        }
+      ]
+    },
+    {
+      "id": "eng-verb-002",
+      "question": "Choose the correct past tense form: 'She ____ to the market yesterday.'",
+      "correctAnswer": "went",
+      "explanation": "'Went' is the irregular past tense form of 'go'.",
+      "concept": "Irregular Past Tense",
+      "difficulty": "easy",
+      "misconceptions": [
+        {
+          "id": "eng-verb-m-002a",
+          "studentAnswer": "goed",
+          "gapType": "procedural",
+          "reason": "Student over-regularizes by adding '-ed' to an irregular verb",
+          "confidence": 0.9,
+          "story": {
+            "template": "flow",
+            "entities": { "item": "word", "people": 1, "container": "mind" },
+            "steps": [
+              "You know that usually we add '-ed' to make past tense (like 'walk' → 'walked').",
+              "But some verbs are REBELS! They don't follow the rules.",
+              "'Go' is a rebel. It changes completely to 'WENT'.",
+              "There is no such word as 'goed' in English!"
+            ],
+            "highlight": "rebel_verbs",
+            "moral": "Watch out for rebel verbs that don't follow the '-ed' rule!"
+          }
+        }
+      ]
+    },
+    {
+      "id": "eng-verb-003",
+      "question": "What is the future tense of 'read'?",
+      "correctAnswer": "will read",
+      "explanation": "To form the future tense, we add 'will' before the base form of the verb.",
+      "concept": "Future Tense",
+      "difficulty": "easy",
+      "misconceptions": [
+        {
+          "id": "eng-verb-m-003a",
+          "studentAnswer": "readed",
+          "gapType": "procedural",
+          "reason": "Student uses past tense instead of future",
+          "confidence": 0.8,
+          "story": {
+            "template": "flow",
+            "entities": { "item": "time", "people": 1, "container": "sentence" },
+            "steps": [
+              "Think about when the action happens.",
+              "Yesterday = Read (pronounced 'red').",
+              "Tomorrow = WILL read.",
+              "Future always needs a helper like 'WILL' or 'GOING TO'."
+            ],
+            "highlight": "helper_words",
+            "moral": "Future needs a helper! Always use 'will' for future actions."
+          }
+        }
+      ]
+    },
+    {
+      "id": "eng-verb-004",
+      "question": "Which of these is a 'helping verb'?",
+      "correctAnswer": "has",
+      "explanation": "'Has', 'have', 'is', 'am', 'are', 'was', 'were' are common helping (auxiliary) verbs.",
+      "concept": "Helping Verbs",
+      "difficulty": "medium",
+      "misconceptions": [
+        {
+          "id": "eng-verb-m-004a",
+          "studentAnswer": "run",
+          "gapType": "conceptual",
+          "reason": "Student confuses main action verbs with helping verbs",
+          "confidence": 0.8,
+          "story": {
+            "template": "compare",
+            "entities": { "item": "verb", "people": 2, "container": "sentence" },
+            "steps": [
+              "A Main Verb is like a STAR - it shows the action (Run, Jump, Eat).",
+              "A Helping Verb is like an ASSISTANT - it helps the star (Is running, Has eaten).",
+              "Run is the action star. 'Has' is the assistant helping to show time.",
+              "Helping verbs don't show much action on their own."
+            ],
+            "highlight": "star_vs_assistant",
+            "moral": "Helping verbs assist the main action verb."
+          }
+        }
+      ]
+    },
+    {
+      "id": "eng-verb-005",
+      "question": "Choose the correct verb: 'The team ____ playing very well today.'",
+      "correctAnswer": "is",
+      "explanation": "Collective nouns like 'team' are usually treated as singular in this context, so we use 'is'.",
+      "concept": "Subject-Verb Agreement",
+      "difficulty": "hard",
+      "misconceptions": [
+        {
+          "id": "eng-verb-m-005a",
+          "studentAnswer": "are",
+          "gapType": "procedural",
+          "reason": "Student thinks because a team has many people, it must be plural",
+          "confidence": 0.75,
+          "story": {
+            "template": "flow",
+            "entities": { "item": "group", "people": 11, "container": "box" },
+            "steps": [
+              "Imagine 11 players. That's many people.",
+              "But they are all in ONE group called a 'Team'.",
+              "Think of the team as a single BOX containing the players.",
+              "There is only ONE box, so we say 'The box IS...', not 'The box ARE...'.",
+              "Same for 'team' - it's one unit!"
+            ],
+            "highlight": "one_unit",
+            "moral": "Treat a collective group as one single unit (singular)."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "topic": "decimals",
+  "grade": 7,
+  "subject": "mathematics",
+  "questions": [
+    {
+      "id": "dec-q-001",
+      "question": "What is 0.5 + 0.25?",
+      "correctAnswer": "0.75",
+      "explanation": "Add decimals by aligning decimal points: 0.50 + 0.25 = 0.75",
+      "concept": "Adding decimals",
+      "difficulty": "easy",
+      "misconceptions": [
+        {
+          "id": "dec-m-001a",
+          "studentAnswer": "0.30",
+          "gapType": "conceptual",
+          "reason": "Student treats decimals as whole numbers (5+25=30) and ignores decimal place value",
+          "confidence": 0.85,
+          "story": {
+            "template": "sharing",
+            "entities": { "item": "rupees", "people": 2, "container": "purse" },
+            "steps": [
+              "Ravi has ₹0.50 (50 paise) and Sita has ₹0.25 (25 paise).",
+              "If they put their money together, they have 50 paise + 25 paise = 75 paise.",
+              "75 paise is ₹0.75. You cannot just add 5+25=30 because 0.50 means 50 paise, not 5!",
+              "Always line up the decimal points: 0.50 + 0.25 = 0.75."
+            ],
+            "highlight": "decimal_alignment",
+            "moral": "Line up decimal points before adding."
+          }
+        },
+        {
+          "id": "dec-m-001b",
+          "studentAnswer": "0.75",
+          "gapType": "careless",
+          "reason": "Student knows the method but makes a slip in place value",
+          "confidence": 0.7,
+          "story": {
+            "template": "flow",
+            "entities": { "item": "decimal", "people": 1, "container": "mind" },
+            "steps": [
+              "You know to line up decimals: 0.50 + 0.25.",
+              "Add hundredths: 0+5=5. Add tenths: 5+2=7.",
+              "So 0.50 + 0.25 = 0.75. Double-check your place values!"
+            ],
+            "highlight": "place_value",
+            "moral": "Check each place value carefully."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dec-q-002",
+      "question": "What is 1.5 × 0.2?",
+      "correctAnswer": "0.3",
+      "explanation": "Multiply: 15×2=30, count decimal places: 1.5 has 1, 0.2 has 1, total 2 places. 30 with 2 decimal places = 0.30 = 0.3",
+      "concept": "Multiplying decimals",
+      "difficulty": "medium",
+      "misconceptions": [
+        {
+          "id": "dec-m-002a",
+          "studentAnswer": "3.0",
+          "gapType": "conceptual",
+          "reason": "Student multiplies 15×2=30 but forgets to count decimal places",
+          "confidence": 0.85,
+          "story": {
+            "template": "flow",
+            "entities": { "item": "decimal", "people": 1, "container": "mind" },
+            "steps": [
+              "First, ignore the decimals: 15 × 2 = 30.",
+              "Now count decimal places: 1.5 has 1 place, 0.2 has 1 place. Total = 2 places.",
+              "Starting from the right of 30, move the decimal 2 places left: 0.30.",
+              "0.30 is the same as 0.3. The answer is 0.3, not 3.0!"
+            ],
+            "highlight": "count_decimal_places",
+            "moral": "Always count the total decimal places in both numbers."
+          }
+        },
+        {
+          "id": "dec-m-002b",
+          "studentAnswer": "0.03",
+          "gapType": "procedural",
+          "reason": "Student counts decimal places correctly but moves decimal in wrong direction",
+          "confidence": 0.75,
+          "story": {
+            "template": "flow",
+            "entities": { "item": "decimal", "people": 1, "container": "mind" },
+            "steps": [
+              "You correctly found 30 and know there are 2 decimal places.",
+              "But you moved the decimal 2 places to the right instead of left!",
+              "30.0 → move left 2 places → 0.30 = 0.3.",
+              "Moving right would give 3000, which is much bigger - that doesn't make sense for 1.5 × 0.2!"
+            ],
+            "highlight": "direction",
+            "moral": "Multiplying decimals gives a smaller number, so move the decimal left."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dec-q-003",
+      "question": "Which is larger: 0.7 or 0.69?",
+      "correctAnswer": "0.7",
+      "explanation": "Compare digit by digit: 0.70 vs 0.69. Tenths: 7 vs 6, so 0.7 > 0.69",
+      "concept": "Comparing decimals",
+      "difficulty": "easy",
+      "misconceptions": [
+        {
+          "id": "dec-m-003a",
+          "studentAnswer": "0.69",
+          "gapType": "conceptual",
+          "reason": "Student thinks 69 is bigger than 7, ignoring decimal place value",
+          "confidence": 0.9,
+          "story": {
+            "template": "compare",
+            "entities": { "item": "rupees", "people": 2, "container": "purse" },
+            "steps": [
+              "Ravi has ₹0.70 (70 paise) and Sita has ₹0.69 (69 paise).",
+              "You see 69 and think it's bigger than 7. But 0.7 is 70 paise!",
+              "Add a zero: 0.7 = 0.70. Now compare: 0.70 vs 0.69.",
+              "70 paise > 69 paise, so 0.7 > 0.69."
+            ],
+            "highlight": "add_zero",
+            "moral": "Add zeros to make decimals have the same number of digits before comparing."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dec-q-004",
+      "question": "What is 3.6 ÷ 0.3?",
+      "correctAnswer": "12",
+      "explanation": "Multiply both by 10: 36 ÷ 3 = 12",
+      "concept": "Dividing decimals",
+      "difficulty": "hard",
+      "misconceptions": [
+        {
+          "id": "dec-m-004a",
+          "studentAnswer": "1.2",
+          "gapType": "conceptual",
+          "reason": "Student divides 3.6 by 3 and gets 1.2, forgetting to account for 0.3",
+          "confidence": 0.85,
+          "story": {
+            "template": "sharing",
+            "entities": { "item": "chocolate", "people": 3, "container": "plate" },
+            "steps": [
+              "You have 3.6 chocolates to share among groups of 0.3 each.",
+              "How many groups of 0.3 can you make from 3.6?",
+              "Multiply both by 10: 3.6 × 10 = 36, 0.3 × 10 = 3.",
+              "Now divide: 36 ÷ 3 = 12 groups!",
+              "You cannot just divide 3.6 by 3 because 0.3 is not 3 - it's 3 tenths!"
+            ],
+            "highlight": "multiply_first",
+            "moral": "Multiply both numbers by 10 to make the divisor a whole number."
+          }
+        },
+        {
+          "id": "dec-m-004b",
+          "studentAnswer": "0.12",
+          "gapType": "procedural",
+          "reason": "Student multiplies correctly but places decimal in wrong position",
+          "confidence": 0.7,
+          "story": {
+            "template": "flow",
+            "entities": { "item": "decimal", "people": 1, "container": "mind" },
+            "steps": [
+              "You correctly multiplied: 3.6 × 10 = 36, 0.3 × 10 = 3.",
+              "36 ÷ 3 = 12. That's the answer!",
+              "Since we multiplied both by 10, the answer doesn't need a decimal.",
+              "3.6 ÷ 0.3 = 12, not 0.12."
+            ],
+            "highlight": "no_decimal_needed",
+            "moral": "When you multiply both numbers equally, the quotient stays the same."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dec-q-005",
+      "question": "What is 2.5 - 1.75?",
+      "correctAnswer": "0.75",
+      "explanation": "Align decimals: 2.50 - 1.75 = 0.75",
+      "concept": "Subtracting decimals",
+      "difficulty": "medium",
+      "misconceptions": [
+        {
+          "id": "dec-m-005a",
+          "studentAnswer": "1.25",
+          "gapType": "conceptual",
+          "reason": "Student subtracts 75 from 25 without borrowing properly",
+          "confidence": 0.8,
+          "story": {
+            "template": "flow",
+            "entities": { "item": "rupees", "people": 1, "container": "purse" },
+            "steps": [
+              "You have ₹2.50 and spend ₹1.75.",
+              "Write it as: 2.50 - 1.75.",
+              "Start from hundredths: 0 - 5 can't do, borrow from tenths. 10 - 5 = 5.",
+              "Tenths: 4 - 7 can't do, borrow from ones. 14 - 7 = 7.",
+              "Ones: 1 - 1 = 0.",
+              "Answer: ₹0.75, not ₹1.25!"
+            ],
+            "highlight": "borrowing",
+            "moral": "When subtracting decimals, borrow carefully from left to right."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dec-q-006",
+      "question": "What is 0.4 ÷ 2?",
+      "correctAnswer": "0.2",
+      "explanation": "Divide the number as a whole: 4 ÷ 2 = 2. Then place the decimal point: 0.2",
+      "concept": "Dividing decimals by whole numbers",
+      "difficulty": "easy",
+      "misconceptions": [
+        {
+          "id": "dec-m-006a",
+          "studentAnswer": "0.02",
+          "gapType": "procedural",
+          "reason": "Student adds an extra zero after the decimal point",
+          "confidence": 0.8,
+          "story": {
+            "template": "flow",
+            "entities": { "item": "chocolate", "people": 2, "container": "plate" },
+            "steps": [
+              "You have 4 tenths of a chocolate (0.4).",
+              "You share it between 2 people.",
+              "Each person gets 2 tenths (0.2).",
+              "0.02 would be 2 hundredths - that's much smaller!",
+              "Just divide the number and keep the decimal in the same place."
+            ],
+            "highlight": "keep_place",
+            "moral": "Keep the decimal in the same relative position when dividing by a whole number."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dec-q-007",
+      "question": "What is 0.1 × 0.1?",
+      "correctAnswer": "0.01",
+      "explanation": "Multiply: 1 × 1 = 1. Count decimal places: 0.1 has one, other 0.1 has one, total 2. Move decimal 2 places left: 0.01",
+      "concept": "Multiplying decimals",
+      "difficulty": "medium",
+      "misconceptions": [
+        {
+          "id": "dec-m-007a",
+          "studentAnswer": "0.1",
+          "gapType": "conceptual",
+          "reason": "Student thinks 0.1 times anything is that thing, or fails to count decimal places correctly",
+          "confidence": 0.85,
+          "story": {
+            "template": "flow",
+            "entities": { "item": "decimal", "people": 1, "container": "mind" },
+            "steps": [
+              "Ignore decimals: 1 × 1 = 1.",
+              "Count decimal places: 0.1 has 1 place, 0.1 has 1 place. Total = 2 places.",
+              "Start from right of 1, move left 2 times: .01",
+              "Add a zero as a placeholder: 0.01.",
+              "Remember: multiplying small decimals makes them even smaller!"
+            ],
+            "highlight": "decimal_counting",
+            "moral": "The number of decimal places in the answer is the sum of decimal places in the numbers being multiplied."
+          }
+        }
+      ]
+    }
+  ]
+}

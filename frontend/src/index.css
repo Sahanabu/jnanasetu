@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #FDFCFE;
+  --bg-secondary: #ffffff;
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --border-primary: #f3f4f6;
+  --accent-primary: #7C3AED;
+}
+
+.dark {
+  --bg-primary: #020617;
+  --bg-secondary: #0f172a;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --border-primary: #1e293b;
+}
+
+@layer base {
+  body {
+    @apply font-sans antialiased transition-colors duration-300;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-violet-600 text-white rounded-full px-6 py-3 font-semibold shadow-card hover:bg-violet-700 active:translate-y-0.5 transition-all duration-200;
+  }
+  .btn-secondary {
+    @apply rounded-full px-6 py-3 font-semibold border-2 shadow-card active:translate-y-0.5 transition-all duration-200;
+    background-color: var(--bg-secondary);
+    color: var(--accent-primary);
+    border-color: var(--border-primary);
+  }
+  .card {
+    @apply rounded-3xl shadow-card border-2 p-6 transition-colors duration-300;
+    background-color: var(--bg-secondary);
+    border-color: var(--border-primary);
+  }
+  .input-field {
+    @apply w-full rounded-2xl border-2 px-4 py-3 text-lg focus:outline-none focus:ring-2 transition-all duration-200;
+    background-color: var(--bg-secondary);
+    border-color: var(--border-primary);
+    color: var(--text-primary);
+  }
+}
+
+@keyframes pop {
+  0% { transform: scale(0.9); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.animate-pop {
+  animation: pop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}

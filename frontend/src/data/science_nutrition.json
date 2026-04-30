@@ -1,0 +1,231 @@
+{
+  "topic": "nutrition_in_plants",
+  "grade": 7,
+  "subject": "science",
+  "questions": [
+    {
+      "id": "sci-nut-001",
+      "question": "What is the process called by which plants make their own food?",
+      "correctAnswer": "Photosynthesis",
+      "explanation": "Photosynthesis is the process by which green plants use sunlight, water, and carbon dioxide to make their own food (glucose).",
+      "concept": "Photosynthesis",
+      "difficulty": "easy",
+      "misconceptions": [
+        {
+          "id": "sci-nut-m-001a",
+          "studentAnswer": "Respiration",
+          "gapType": "conceptual",
+          "reason": "Student confuses photosynthesis (making food) with respiration (releasing energy from food)",
+          "confidence": 0.85,
+          "story": {
+            "template": "flow",
+            "entities": { "item": "plant", "people": 1, "container": "leaf" },
+            "steps": [
+              "Think of a plant like a small factory in your kitchen.",
+              "Photosynthesis is like COOKING - the plant uses sunlight (like a stove), water, and carbon dioxide to MAKE food.",
+              "Respiration is like DIGESTION - the plant breaks down food to get ENERGY.",
+              "So making food = Photosynthesis. Using food = Respiration. They are opposites!"
+            ],
+            "highlight": "making_vs_using",
+            "moral": "Photosynthesis makes food, respiration uses food."
+          }
+        },
+        {
+          "id": "sci-nut-m-001b",
+          "studentAnswer": "Transpiration",
+          "gapType": "conceptual",
+          "reason": "Student confuses photosynthesis with transpiration (water loss through leaves)",
+          "confidence": 0.75,
+          "story": {
+            "template": "flow",
+            "entities": { "item": "plant", "people": 1, "container": "leaf" },
+            "steps": [
+              "Transpiration is when plants lose water through their leaves - like when you sweat!",
+              "Photosynthesis is when plants MAKE FOOD using sunlight.",
+              "Remember: 'Photo' means light, 'Synthesis' means to make. Photosynthesis = making food using light."
+            ],
+            "highlight": "photo_means_light",
+            "moral": "Photo = light, Synthesis = making. Photosynthesis = making with light."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sci-nut-002",
+      "question": "Which gas do plants absorb from the air during photosynthesis?",
+      "correctAnswer": "Carbon dioxide",
+      "explanation": "Plants absorb carbon dioxide (CO₂) from the air through tiny pores called stomata in their leaves.",
+      "concept": "Photosynthesis gases",
+      "difficulty": "easy",
+      "misconceptions": [
+        {
+          "id": "sci-nut-m-002a",
+          "studentAnswer": "Oxygen",
+          "gapType": "conceptual",
+          "reason": "Student confuses what plants take in (CO₂) with what they release (O₂)",
+          "confidence": 0.9,
+          "story": {
+            "template": "flow",
+            "entities": { "item": "plant", "people": 1, "container": "leaf" },
+            "steps": [
+              "Think of a plant like a magical machine.",
+              "It takes in CARBON DIOXIDE (the gas we breathe out) and WATER.",
+              "It uses SUNLIGHT as energy to turn these into FOOD.",
+              "And it releases OXYGEN as a byproduct - which is what we breathe in!",
+              "So: IN goes CO₂ + Water, OUT goes Oxygen. Remember: plants breathe in what we breathe out!"
+            ],
+            "highlight": "in_out",
+            "moral": "Plants take in CO₂ and release O₂ - they are the opposite of humans!"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sci-nut-003",
+      "question": "What is the green pigment in leaves that helps capture sunlight?",
+      "correctAnswer": "Chlorophyll",
+      "explanation": "Chlorophyll is the green pigment present in chloroplasts of plant cells that captures sunlight energy for photosynthesis.",
+      "concept": "Chlorophyll",
+      "difficulty": "easy",
+      "misconceptions": [
+        {
+          "id": "sci-nut-m-003a",
+          "studentAnswer": "Chloroplast",
+          "gapType": "conceptual",
+          "reason": "Student confuses chlorophyll (the pigment) with chloroplast (the organelle that contains it)",
+          "confidence": 0.8,
+          "story": {
+            "template": "compare",
+            "entities": { "item": "kitchen", "people": 1, "container": "house" },
+            "steps": [
+              "A chloroplast is like a KITCHEN in a house (the plant cell).",
+              "Chlorophyll is like the CHEF inside the kitchen who actually does the cooking!",
+              "Chlorophyll is the green PIGMENT (color) that captures sunlight.",
+              "Chloroplast is the ORGANELLE (tiny organ) that contains the chlorophyll.",
+              "So: Chloroplast = kitchen, Chlorophyll = chef inside the kitchen."
+            ],
+            "highlight": "pigment_vs_organelle",
+            "moral": "Chlorophyll is the pigment, chloroplast is the organelle that contains it."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sci-nut-004",
+      "question": "What are the tiny pores on the surface of leaves called?",
+      "correctAnswer": "Stomata",
+      "explanation": "Stomata are tiny pores on the leaf surface that allow exchange of gases (CO₂ in, O₂ out) and water vapor.",
+      "concept": "Stomata",
+      "difficulty": "medium",
+      "misconceptions": [
+        {
+          "id": "sci-nut-m-004a",
+          "studentAnswer": "Root hairs",
+          "gapType": "conceptual",
+          "reason": "Student confuses leaf pores (stomata) with root structures (root hairs) that absorb water",
+          "confidence": 0.8,
+          "story": {
+            "template": "compare",
+            "entities": { "item": "house", "people": 1, "container": "garden" },
+            "steps": [
+              "Stomata are like WINDOWS on the leaves - they let air in and out.",
+              "Root hairs are like WATER PIPES underground - they absorb water from the soil.",
+              "Windows are on the walls (leaves), pipes are underground (roots).",
+              "So: Stomata = windows on leaves for gas exchange. Root hairs = pipes underground for water."
+            ],
+            "highlight": "windows_vs_pipes",
+            "moral": "Stomata are on leaves for gas exchange, root hairs are underground for water absorption."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sci-nut-005",
+      "question": "Which of these is NOT needed for photosynthesis?",
+      "correctAnswer": "Soil",
+      "explanation": "Photosynthesis needs sunlight, water, and carbon dioxide. Soil provides minerals but is not directly needed for the photosynthesis process.",
+      "concept": "Requirements for photosynthesis",
+      "difficulty": "medium",
+      "misconceptions": [
+        {
+          "id": "sci-nut-m-005a",
+          "studentAnswer": "Sunlight",
+          "gapType": "conceptual",
+          "reason": "Student thinks plants can photosynthesize in the dark because some plants grow in shade",
+          "confidence": 0.85,
+          "story": {
+            "template": "flow",
+            "entities": { "item": "plant", "people": 1, "container": "room" },
+            "steps": [
+              "Sunlight is like the ELECTRICITY for a factory. Without electricity, machines can't run.",
+              "Some plants can survive in low light, but they grow SLOWLY because they get less energy.",
+              "Plants that grow in complete darkness actually turn yellow because they can't make chlorophyll without light!",
+              "So sunlight is ESSENTIAL for photosynthesis - it's the energy source!"
+            ],
+            "highlight": "sunlight_is_energy",
+            "moral": "Sunlight provides the energy needed for photosynthesis - it's essential."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sci-nut-006",
+      "question": "What is the mode of nutrition in mushrooms?",
+      "correctAnswer": "Saprotrophic",
+      "explanation": "Mushrooms are fungi that obtain nutrients from dead and decaying organic matter. This is called saprotrophic nutrition.",
+      "concept": "Saprotrophic nutrition",
+      "difficulty": "medium",
+      "misconceptions": [
+        {
+          "id": "sci-nut-m-006a",
+          "studentAnswer": "Autotrophic",
+          "gapType": "conceptual",
+          "reason": "Student thinks because mushrooms grow in soil, they are plants and make their own food",
+          "confidence": 0.8,
+          "story": {
+            "template": "compare",
+            "entities": { "item": "mushroom", "people": 1, "container": "forest" },
+            "steps": [
+              "Plants are green because they have chlorophyll to make food.",
+              "Are mushrooms green? No! They don't have chlorophyll.",
+              "They can't cook their own food using sunlight.",
+              "Instead, they eat 'leftovers' from dead trees and leaves in the forest.",
+              "So: Green plants = Autotrophs (Self-feeders). Mushrooms = Saprotrophs (Decay-feeders)."
+            ],
+            "highlight": "no_chlorophyll",
+            "moral": "If it's not green, it probably doesn't make its own food!"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sci-nut-007",
+      "question": "Which plant is a famous example of a parasite that sucks nutrients from other plants?",
+      "correctAnswer": "Cuscuta (Amarbel)",
+      "explanation": "Cuscuta is a yellow tubular plant that climbs on other trees and absorbs their ready-made food.",
+      "concept": "Parasitic nutrition",
+      "difficulty": "medium",
+      "misconceptions": [
+        {
+          "id": "sci-nut-m-007a",
+          "studentAnswer": "Pitcher plant",
+          "gapType": "conceptual",
+          "reason": "Student confuses parasites (suck food) with insectivorous plants (trap insects)",
+          "confidence": 0.75,
+          "story": {
+            "template": "compare",
+            "entities": { "item": "plant", "people": 1, "container": "garden" },
+            "steps": [
+              "A parasite like Cuscuta is like a THIEF - it steals food already made by another plant.",
+              "An insectivorous plant like the Pitcher plant is like a HUNTER - it makes its own food but also traps insects for extra minerals.",
+              "Cuscuta steals from plants. Pitcher plant hunts insects.",
+              "Yellow vine (Cuscuta) = Parasite. Green trap (Pitcher plant) = Insectivorous."
+            ],
+            "highlight": "thief_vs_hunter",
+            "moral": "Parasites steal from other plants, while insectivorous plants hunt insects."
+          }
+        }
+      ]
+    }
+  ]
+}

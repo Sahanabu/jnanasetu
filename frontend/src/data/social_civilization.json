@@ -1,0 +1,152 @@
+{
+  "topic": "ancient_civilizations",
+  "grade": 7,
+  "subject": "social studies",
+  "questions": [
+    {
+      "id": "soc-civ-001",
+      "question": "Which civilization is known for building the Great Pyramids?",
+      "correctAnswer": "Ancient Egyptian Civilization",
+      "explanation": "The Ancient Egyptians built the pyramids as tombs for their Pharaohs, the most famous being the Great Pyramid of Giza.",
+      "concept": "Egyptian Civilization",
+      "difficulty": "easy",
+      "misconceptions": [
+        {
+          "id": "soc-civ-m-001a",
+          "studentAnswer": "Mesopotamian Civilization",
+          "gapType": "conceptual",
+          "reason": "Student confuses Ziggurats (Mesopotamia) with Pyramids (Egypt)",
+          "confidence": 0.8,
+          "story": {
+            "template": "compare",
+            "entities": { "item": "building", "people": 1, "container": "desert" },
+            "steps": [
+              "Imagine a desert with giant stone triangles. Those are Pyramids from Egypt!",
+              "Now imagine a stepped tower that looks like a wedding cake. Those are Ziggurats from Mesopotamia.",
+              "Pyramids = Smooth triangles for tombs. Ziggurats = Stepped towers for temples.",
+              "The Great Pyramids belong to Egypt!"
+            ],
+            "highlight": "pyramid_vs_ziggurat",
+            "moral": "Pyramids are Egyptian, Ziggurats are Mesopotamian."
+          }
+        }
+      ]
+    },
+    {
+      "id": "soc-civ-002",
+      "question": "The Indus Valley Civilization was located near which river?",
+      "correctAnswer": "Indus River",
+      "explanation": "The Indus Valley Civilization flourished around the Indus River and its tributaries in present-day India and Pakistan.",
+      "concept": "Indus Valley Civilization",
+      "difficulty": "easy",
+      "misconceptions": [
+        {
+          "id": "soc-civ-m-002a",
+          "studentAnswer": "Nile River",
+          "gapType": "conceptual",
+          "reason": "Student confuses the Indus River with the Nile River (Egypt)",
+          "confidence": 0.85,
+          "story": {
+            "template": "flow",
+            "entities": { "item": "river", "people": 1, "container": "map" },
+            "steps": [
+              "Look at the map of the world.",
+              "The Nile River is in Africa - that's where the Egyptians lived.",
+              "The Indus River is in South Asia - that's where the Indus Valley people lived.",
+              "Indus Valley is named after the Indus River!"
+            ],
+            "highlight": "river_location",
+            "moral": "The Indus Valley Civilization is named after the Indus River."
+          }
+        }
+      ]
+    },
+    {
+      "id": "soc-civ-003",
+      "question": "What was the main occupation of people in the Mesopotamian civilization?",
+      "correctAnswer": "Agriculture",
+      "explanation": "Like most ancient civilizations, Mesopotamia relied on fertile land between the Tigris and Euphrates rivers for farming.",
+      "concept": "Mesopotamian Civilization",
+      "difficulty": "medium",
+      "misconceptions": [
+        {
+          "id": "soc-civ-m-003a",
+          "studentAnswer": "Mining",
+          "gapType": "procedural",
+          "reason": "Student thinks because they used bronze, their main job was mining",
+          "confidence": 0.7,
+          "story": {
+            "template": "flow",
+            "entities": { "item": "farm", "people": 1, "container": "land" },
+            "steps": [
+              "While they did make tools, most people spent their days in the fields.",
+              "The rivers flooded and left rich soil called silt.",
+              "This made farming very easy and productive, so most people were farmers!",
+              "Without agriculture, they wouldn't have had enough food to build cities."
+            ],
+            "highlight": "agriculture_base",
+            "moral": "Food (agriculture) always comes first in ancient civilizations!"
+          }
+        }
+      ]
+    },
+    {
+      "id": "soc-civ-004",
+      "question": "Which of these civilizations is famous for its planned cities and drainage systems?",
+      "correctAnswer": "Indus Valley Civilization",
+      "explanation": "Harappa and Mohenjo-daro were highly planned cities of the Indus Valley with advanced brickwork and drainage systems.",
+      "concept": "City Planning",
+      "difficulty": "medium",
+      "misconceptions": [
+        {
+          "id": "soc-civ-m-004a",
+          "studentAnswer": "Roman Civilization",
+          "gapType": "conceptual",
+          "reason": "Student associates 'advanced' with Rome, missing the earlier Indus achievement",
+          "confidence": 0.75,
+          "story": {
+            "template": "flow",
+            "entities": { "item": "city", "people": 1, "container": "brick" },
+            "steps": [
+              "Romans were great engineers, but the Indus people did it thousands of years earlier!",
+              "They used baked bricks of the same size and had covered drains in every street.",
+              "Their cities were laid out like a grid - just like modern New York!",
+              "The Indus Valley was the pioneer of city planning."
+            ],
+            "highlight": "pioneers_of_planning",
+            "moral": "The Indus Valley people were the world's first great city planners."
+          }
+        }
+      ]
+    },
+    {
+      "id": "soc-civ-005",
+      "question": "What was the writing system of Ancient Egypt called?",
+      "correctAnswer": "Hieroglyphics",
+      "explanation": "Hieroglyphics was a writing system using picture symbols, used by Ancient Egyptians.",
+      "concept": "Egyptian Writing",
+      "difficulty": "medium",
+      "misconceptions": [
+        {
+          "id": "soc-civ-m-005a",
+          "studentAnswer": "Cuneiform",
+          "gapType": "conceptual",
+          "reason": "Student confuses Egyptian writing with Mesopotamian writing (Cuneiform)",
+          "confidence": 0.8,
+          "story": {
+            "template": "compare",
+            "entities": { "item": "script", "people": 1, "container": "tablet" },
+            "steps": [
+              "Hieroglyphics look like PICTURES (birds, eyes, snakes).",
+              "Cuneiform looks like WEDGE marks (triangles made with a reed).",
+              "Egypt = Hieroglyphics (Pictures). Mesopotamia = Cuneiform (Wedges).",
+              "Remember: 'Hiero' sounds like 'Hero' - like characters in a storybook picture!"
+            ],
+            "highlight": "picture_vs_wedge",
+            "moral": "Egyptian writing used pictures (Hieroglyphics), Mesopotamian used wedges (Cuneiform)."
+          }
+        }
+      ]
+    }
+  ]
+}

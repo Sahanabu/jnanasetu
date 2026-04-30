@@ -1,0 +1,372 @@
+{
+  "topic": "fractions",
+  "grade": 7,
+  "subject": "mathematics",
+  "questions": [
+    {
+      "id": "frac-q-001",
+      "question": "What is 1/2 + 1/3?",
+      "correctAnswer": "5/6",
+      "explanation": "To add fractions with different denominators, find the LCM of 2 and 3 which is 6. Convert 1/2 to 3/6 and 1/3 to 2/6. Then add: 3/6 + 2/6 = 5/6.",
+      "concept": "adding unlike fractions",
+      "difficulty": "medium",
+      "misconceptions": [
+        {
+          "id": "frac-m-001a",
+          "studentAnswer": "2/5",
+          "gapType": "conceptual",
+          "reason": "Student adds numerators AND denominators directly without finding common denominator",
+          "confidence": 0.85,
+          "story": {
+            "template": "sharing",
+            "entities": { "item": "roti", "people": 2, "container": "plate" },
+            "steps": [
+              "Ravi has 1 roti cut into 2 equal pieces. He takes 1 piece. That's 1/2.",
+              "Sita has 1 roti cut into 3 equal pieces. She takes 1 piece. That's 1/3.",
+              "If they put their pieces together on one plate, are the pieces the same size? No! One is bigger than the other.",
+              "To add them fairly, we need to cut both rotis into pieces of the SAME size. Cut the first roti into 6 pieces (Ravi gets 3) and the second into 6 pieces (Sita gets 2).",
+              "Now both pieces are the same size! Ravi has 3/6 and Sita has 2/6.",
+              "Together they have 3/6 + 2/6 = 5/6 of a roti."
+            ],
+            "highlight": "common_denominator",
+            "moral": "You can only add fractions when the pieces are the same size. Find the common denominator first!"
+          }
+        },
+        {
+          "id": "frac-m-001b",
+          "studentAnswer": "2/6",
+          "gapType": "procedural",
+          "reason": "Student finds common denominator but only converts one fraction",
+          "confidence": 0.7,
+          "story": {
+            "template": "sharing",
+            "entities": { "item": "pizza", "people": 2, "container": "plate" },
+            "steps": [
+              "You correctly found that 6 is the common denominator. Good start!",
+              "But remember: 1/2 = 3/6 (multiply both top and bottom by 3).",
+              "And 1/3 = 2/6 (multiply both top and bottom by 2).",
+              "If you only convert one fraction, you're comparing apples and oranges.",
+              "Both fractions must be converted to sixths before adding.",
+              "3/6 + 2/6 = 5/6, not 2/6."
+            ],
+            "highlight": "convert_both",
+            "moral": "Always convert BOTH fractions to the common denominator before adding."
+          }
+        },
+        {
+          "id": "frac-m-001c",
+          "studentAnswer": "1/5",
+          "gapType": "careless",
+          "reason": "Student likely misread the problem or made an arithmetic slip",
+          "confidence": 0.6,
+          "story": {
+            "template": "flow",
+            "entities": { "item": "steps", "people": 1, "container": "mind" },
+            "steps": [
+              "Let's check your work step by step.",
+              "Step 1: Find LCM of 2 and 3 → 6 ✓",
+              "Step 2: Convert 1/2 → 3/6 and 1/3 → 2/6",
+              "Step 3: Add numerators: 3 + 2 = 5",
+              "Step 4: Keep denominator: 6",
+              "The answer should be 5/6. Looks like a small slip happened somewhere!"
+            ],
+            "highlight": "double_check",
+            "moral": "Take your time and check each step. Small mistakes happen to everyone!"
+          }
+        }
+      ]
+    },
+    {
+      "id": "frac-q-002",
+      "question": "What is 2/3 × 4/5?",
+      "correctAnswer": "8/15",
+      "explanation": "Multiply numerators: 2 × 4 = 8. Multiply denominators: 3 × 5 = 15. The answer is 8/15. This fraction is already in simplest form.",
+      "concept": "multiplying fractions",
+      "difficulty": "easy",
+      "misconceptions": [
+        {
+          "id": "frac-m-002a",
+          "studentAnswer": "6/8",
+          "gapType": "procedural",
+          "reason": "Student added numerators and denominators instead of multiplying",
+          "confidence": 0.8,
+          "story": {
+            "template": "flow",
+            "entities": { "item": "steps", "people": 1, "container": "mind" },
+            "steps": [
+              "When multiplying fractions, we don't add them together.",
+              "Think of 2/3 × 4/5 as 'two-thirds of four-fifths'.",
+              "Multiply the top numbers: 2 × 4 = 8. This is how many parts we have.",
+              "Multiply the bottom numbers: 3 × 5 = 15. This is the total size of each part.",
+              "So 2/3 × 4/5 = 8/15.",
+              "Adding would give 6/8, but that's for addition, not multiplication!"
+            ],
+            "highlight": "multiply_not_add",
+            "moral": "For multiplication, multiply numerators together and denominators together. Don't add!"
+          }
+        },
+        {
+          "id": "frac-m-002b",
+          "studentAnswer": "8/15",
+          "gapType": "careless",
+          "reason": "Student got the correct answer but may have made a lucky guess or needs verification",
+          "confidence": 0.5,
+          "story": {
+            "template": "flow",
+            "entities": { "item": "check", "people": 1, "container": "mind" },
+            "steps": [
+              "You got 8/15 which is correct! Well done!",
+              "Let's verify: 2 × 4 = 8 and 3 × 5 = 15.",
+              "Can 8/15 be simplified? 8 and 15 have no common factors, so it's already simplified.",
+              "Perfect! You've mastered multiplying fractions.",
+              "Remember this method for harder problems too.",
+              "Keep up the great work!"
+            ],
+            "highlight": "verification",
+            "moral": "Always check if your answer can be simplified!"
+          }
+        },
+        {
+          "id": "frac-m-002c",
+          "studentAnswer": "6/15",
+          "gapType": "procedural",
+          "reason": "Student added numerators but multiplied denominators",
+          "confidence": 0.75,
+          "story": {
+            "template": "compare",
+            "entities": { "item": "method", "people": 2, "container": "table" },
+            "steps": [
+              "It looks like you mixed up the addition and multiplication methods.",
+              "For addition: find common denominator, then add numerators.",
+              "For multiplication: just multiply numerators and denominators straight across.",
+              "You multiplied denominators correctly (3×5=15), but added numerators (2+4=6).",
+              "For multiplication, multiply: 2×4=8, not 2+4=6.",
+              "So 2/3 × 4/5 = 8/15, not 6/15."
+            ],
+            "highlight": "straight_multiplication",
+            "moral": "Multiplication is simpler than addition! Just multiply across: top × top, bottom × bottom."
+          }
+        }
+      ]
+    },
+    {
+      "id": "frac-q-003",
+      "question": "Which is larger: 3/4 or 5/8?",
+      "correctAnswer": "3/4",
+      "explanation": "Convert 3/4 to eighths: 3/4 = 6/8. Since 6/8 > 5/8, 3/4 is larger than 5/8.",
+      "concept": "comparing fractions",
+      "difficulty": "medium",
+      "misconceptions": [
+        {
+          "id": "frac-m-003a",
+          "studentAnswer": "5/8",
+          "gapType": "conceptual",
+          "reason": "Student compared numerators only (5 > 3) without considering denominators",
+          "confidence": 0.85,
+          "story": {
+            "template": "compare",
+            "entities": { "item": "pizza", "people": 2, "container": "table" },
+            "steps": [
+              "Imagine two pizzas of the same size.",
+              "Pizza A is cut into 4 slices. You have 3 slices. That's 3/4.",
+              "Pizza B is cut into 8 slices. You have 5 slices. That's 5/8.",
+              "Now compare: 3 slices of a 4-slice pizza vs 5 slices of an 8-slice pizza.",
+              "The slices from Pizza A are bigger! 3/4 = 6/8 when we use the same size slices.",
+              "6/8 > 5/8, so 3/4 is larger!"
+            ],
+            "highlight": "common_denominator_comparison",
+            "moral": "You can't compare fractions by numerators alone. Convert to the same denominator first!"
+          }
+        },
+        {
+          "id": "frac-m-003b",
+          "studentAnswer": "3/4",
+          "gapType": "careless",
+          "reason": "Student got the correct answer but may need to verify understanding",
+          "confidence": 0.5,
+          "story": {
+            "template": "compare",
+            "entities": { "item": "pizza", "people": 2, "container": "table" },
+            "steps": [
+              "You're right! 3/4 is larger than 5/8.",
+              "Let's prove it: 3/4 = 6/8 (multiply top and bottom by 2).",
+              "Now compare: 6/8 vs 5/8. 6 > 5, so 3/4 wins!",
+              "Another way: 3/4 = 0.75 and 5/8 = 0.625. 0.75 > 0.625.",
+              "Both methods give the same answer.",
+              "Great job!"
+            ],
+            "highlight": "verification_methods",
+            "moral": "There are multiple ways to compare fractions. Use whichever makes sense to you!"
+          }
+        },
+        {
+          "id": "frac-m-003c",
+          "studentAnswer": "they are equal",
+          "gapType": "conceptual",
+          "reason": "Student thinks 3/4 and 5/8 are equal because they are close in value",
+          "confidence": 0.7,
+          "story": {
+            "template": "compare",
+            "entities": { "item": "chocolate_bar", "people": 2, "container": "table" },
+            "steps": [
+              "Let's use a chocolate bar to compare!",
+              "Break one bar into 4 equal pieces. Take 3 pieces. That's 3/4.",
+              "Break another identical bar into 8 equal pieces. Take 5 pieces. That's 5/8.",
+              "Place the 3/4 pieces next to the 5/8 pieces.",
+              "You'll see the 3/4 pile has more chocolate! Because 3/4 = 6/8.",
+              "So 3/4 is definitely larger than 5/8."
+            ],
+            "highlight": "visual_comparison",
+            "moral": "When fractions look close, convert them to the same denominator to compare accurately."
+          }
+        }
+      ]
+    },
+    {
+      "id": "frac-q-004",
+      "question": "What is 2/3 of 12?",
+      "correctAnswer": "8",
+      "explanation": "To find 2/3 of 12, first find 1/3 of 12 by dividing 12 by 3 = 4. Then multiply by 2: 4 × 2 = 8.",
+      "concept": "fraction of a quantity",
+      "difficulty": "medium",
+      "misconceptions": [
+        {
+          "id": "frac-m-004a",
+          "studentAnswer": "6",
+          "gapType": "procedural",
+          "reason": "Student divided 12 by 2 instead of finding 1/3 first",
+          "confidence": 0.75,
+          "story": {
+            "template": "flow",
+            "entities": { "item": "candies", "people": 3, "container": "bowl" },
+            "steps": [
+              "You have 12 candies. You need to find 2/3 of them.",
+              "First, find what 1/3 is. Divide 12 by 3 (the denominator): 12 ÷ 3 = 4.",
+              "So 1/3 of 12 is 4 candies.",
+              "Now, 2/3 means two of those groups: 4 × 2 = 8.",
+              "You divided by 2 instead of 3. Remember: the denominator tells you how many groups to split into.",
+              "2/3 of 12 = 8 candies."
+            ],
+            "highlight": "denominator_first",
+            "moral": "Always divide by the denominator first to find one part, then multiply by the numerator."
+          }
+        },
+        {
+          "id": "frac-m-004b",
+          "studentAnswer": "24",
+          "gapType": "conceptual",
+          "reason": "Student multiplied 12 by 2 instead of finding fraction of quantity correctly",
+          "confidence": 0.8,
+          "story": {
+            "template": "sharing",
+            "entities": { "item": "candies", "people": 3, "container": "bowl" },
+            "steps": [
+              "You have 12 candies. '2/3 of 12' means we want two-thirds of the total.",
+              "Think: if we share 12 candies among 3 friends, each gets 12 ÷ 3 = 4.",
+              "That's 1/3 of the candies (one friend's share).",
+              "2/3 means two friends' shares: 4 + 4 = 8.",
+              "Multiplying 12 × 2 = 24 would give you more than you started with!",
+              "A fraction of something should be less than the whole thing (unless it's an improper fraction)."
+            ],
+            "highlight": "fraction_less_than_whole",
+            "moral": "A proper fraction of a number should be smaller than the original number. Check if your answer makes sense!"
+          }
+        },
+        {
+          "id": "frac-m-004c",
+          "studentAnswer": "4",
+          "gapType": "procedural",
+          "reason": "Student found 1/3 of 12 but forgot to multiply by the numerator 2",
+          "confidence": 0.7,
+          "story": {
+            "template": "flow",
+            "entities": { "item": "candies", "people": 3, "container": "bowl" },
+            "steps": [
+              "Good start! You correctly found that 1/3 of 12 is 4.",
+              "But the question asks for 2/3, not 1/3.",
+              "2/3 means two groups of 1/3.",
+              "So if 1/3 = 4, then 2/3 = 4 × 2 = 8.",
+              "You stopped one step too early!",
+              "Always multiply by the numerator after dividing by the denominator."
+            ],
+            "highlight": "multiply_by_numerator",
+            "moral": "After finding 1 part (divide by denominator), multiply by the numerator to get the final answer."
+          }
+        }
+      ]
+    },
+    {
+      "id": "frac-q-005",
+      "question": "Convert 2 1/3 to an improper fraction.",
+      "correctAnswer": "7/3",
+      "explanation": "Multiply the whole number by the denominator: 2 × 3 = 6. Add the numerator: 6 + 1 = 7. Keep the denominator: 3. So 2 1/3 = 7/3.",
+      "concept": "mixed numbers",
+      "difficulty": "easy",
+      "misconceptions": [
+        {
+          "id": "frac-m-005a",
+          "studentAnswer": "5/3",
+          "gapType": "procedural",
+          "reason": "Student added whole number and numerator instead of multiplying whole number by denominator first",
+          "confidence": 0.8,
+          "story": {
+            "template": "flow",
+            "entities": { "item": "pizzas", "people": 1, "container": "plate" },
+            "steps": [
+              "2 1/3 means 2 whole pizzas and 1/3 of another pizza.",
+              "Each whole pizza has 3 thirds. So 2 whole pizzas = 2 × 3 = 6 thirds.",
+              "Add the extra 1/3: 6 + 1 = 7 thirds total.",
+              "So 2 1/3 = 7/3.",
+              "You added 2 + 1 = 3, giving 3/3. But that's only 1 pizza!",
+              "Remember: multiply the whole number by the denominator first, then add the numerator."
+            ],
+            "highlight": "multiply_then_add",
+            "moral": "Mixed to improper: whole × denominator + numerator, all over the same denominator."
+          }
+        },
+        {
+          "id": "frac-m-005b",
+          "studentAnswer": "7/3",
+          "gapType": "careless",
+          "reason": "Student got the correct answer, verifying understanding",
+          "confidence": 0.5,
+          "story": {
+            "template": "flow",
+            "entities": { "item": "pizzas", "people": 1, "container": "plate" },
+            "steps": [
+              "Perfect! 2 1/3 = 7/3 is correct!",
+              "Let's verify: 2 × 3 = 6, then 6 + 1 = 7, keep denominator 3.",
+              "So 7/3 means 7 thirds, which is the same as 2 whole pizzas and 1 extra third.",
+              "You can check by dividing: 7 ÷ 3 = 2 remainder 1, which is 2 1/3.",
+              "You've mastered mixed number conversion!",
+              "Great work!"
+            ],
+            "highlight": "verification",
+            "moral": "You can always check your answer by dividing the numerator by the denominator."
+          }
+        },
+        {
+          "id": "frac-m-005c",
+          "studentAnswer": "6/3",
+          "gapType": "procedural",
+          "reason": "Student multiplied whole number by denominator but forgot to add the numerator",
+          "confidence": 0.75,
+          "story": {
+            "template": "flow",
+            "entities": { "item": "pizzas", "people": 1, "container": "plate" },
+            "steps": [
+              "You correctly multiplied 2 × 3 = 6. Good!",
+              "But 6/3 only accounts for the 2 whole pizzas (6 thirds).",
+              "What about the extra 1/3? We need to add it!",
+              "6/3 + 1/3 = 7/3.",
+              "The formula is: (whole × denominator) + numerator, all over the denominator.",
+              "So 2 1/3 = (2×3 + 1)/3 = 7/3."
+            ],
+            "highlight": "add_numerator",
+            "moral": "Don't forget to add the numerator after multiplying! Whole × denominator + numerator."
+          }
+        }
+      ]
+    }
+  ]
+}
